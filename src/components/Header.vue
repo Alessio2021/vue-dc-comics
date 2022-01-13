@@ -29,8 +29,9 @@ export default {
 <style lang="scss" scoped>
     
     header {
+    height: 7em;
     display: flex;
-    padding: 1em 0;
+    padding: 0;
         .header-sx {
             width: 30%;
         }
@@ -51,7 +52,7 @@ export default {
                 text-transform: uppercase;
                 font-weight: bold;
                 color: black;
-                padding: 2em 0;
+                padding: 2.9em 0;
                 margin: 0 1em;
             }
             .active {
