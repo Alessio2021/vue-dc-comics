@@ -11,6 +11,9 @@
            :img="product.thumb"
            :alt="product.series"
           />
+          <div class="button">
+            <button>load more</button>
+          </div>
         </ul>
       </div>
     </div>
@@ -127,7 +130,21 @@ export default {
         display: flex;
         width: 100%;
         padding: 2em;
-            flex-wrap: wrap;
+        flex-wrap: wrap;
+        .button {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          button {
+            text-transform: uppercase;
+            padding: 0.5em 3em;
+            font-weight: bold;
+            color: white;
+            background-color: #0282F9;
+            border: none;
+            cursor: pointer;
+          }
+        }
       }
   }
 </style>
