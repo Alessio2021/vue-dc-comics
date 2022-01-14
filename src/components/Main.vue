@@ -4,20 +4,28 @@
     </div>
     <div class="container-main">
       <h2 class="title-absolute">current series</h2>
-      
+      <div class="container">
+        <ul>
+          <li v-for="(product, index) in products" :key="index">
+            <Product/>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import Product from "./Product.vue"
+
 export default {
   name: "Main",
   components: {
-    // Product,
+    Product,
   },
   data() {
     return {
-      product: [
+      products: [
     {
       thumb: "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX",
       price: "$19.99",
