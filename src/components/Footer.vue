@@ -78,40 +78,39 @@
     </div>
     <div class="footer-bottom">
         <div class="container d-flex">
-        <div class="footer-bottom-sx">
-        <button>sign-up now!</button>
-        </div>
-        <div class="footer-bottom-dx">
-            <h2>follow us</h2>
-            <ul>
-                <li>
-                    <a href="">
-                        <img src="../assets/img/footer-facebook.png" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="../assets/img/footer-twitter.png" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="../assets/img/footer-youtube.png" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="../assets/img/footer-pinterest.png" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="../assets/img/footer-periscope.png" alt="">
-                    </a>
-                </li>
-            </ul>
-        </div>
-
+            <div class="footer-bottom-sx">
+                <button>sign-up now!</button>
+            </div>
+            <div class="footer-bottom-dx">
+                <h2>follow us</h2>
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="../assets/img/footer-facebook.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../assets/img/footer-twitter.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../assets/img/footer-youtube.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../assets/img/footer-pinterest.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../assets/img/footer-periscope.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>    
 </div>
@@ -124,9 +123,11 @@ export default {
 </script>
 
 <style lang="scss" scoped> 
+@import "../assets/scss/partials/_variables.scss";
+
     .container-top {
         padding: 3em 0;
-        background-color: #0282F9;
+        background-color: $blueDcomics;
         .footer-top {
             width: 80%;
             margin: 0 auto;
@@ -196,7 +197,7 @@ export default {
                 width: 50%;
                 button {
                     text-transform: uppercase;
-                    border: 1px solid #0282F9;
+                    border: 1px solid $blueDcomics;
                     background-color: #303030;
                     font-weight: bold;
                     color: white;
@@ -212,7 +213,7 @@ export default {
                     text-transform: uppercase;
                     display: flex;
                     align-items: center;
-                    color: #0282F9;
+                    color: $blueDcomics;
                     padding: 0 1em;
                 }
                 ul {

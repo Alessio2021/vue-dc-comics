@@ -27,7 +27,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    
+    @import "../assets/scss/partials/_variables.scss";
+
     header {
     height: 7em;
     display: flex;
@@ -56,8 +57,8 @@ export default {
                 margin: 0 1em;
             }
             .active {
-                color: #0C7CEC;
-                border-bottom: 3px solid #0C7CEC;
+                color: $blueDcomics;
+                border-bottom: 3px solid $blueDcomics;
             }
         }
     }

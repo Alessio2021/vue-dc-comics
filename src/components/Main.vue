@@ -110,6 +110,8 @@ export default {
 </script>
 
 <style lang="scss" scoped> 
+@import "../assets/scss/partials/_variables.scss";
+
   .jumbo {
     background-image: url(../assets/img/jumbotron.jpg);
     height: 400px;
@@ -118,7 +120,7 @@ export default {
       background-color: #1C1C1C;
       position: relative;
       .title-absolute {
-        background-color: #0282F9;
+        background-color: $blueDcomics;
         padding: 0.5em 1.5em;
         text-transform: uppercase;
         color: white;
@@ -137,10 +139,10 @@ export default {
           width: 100%;
           button {
             text-transform: uppercase;
-            padding: 0.5em 3em;
+            padding: 1em 3em;
             font-weight: bold;
             color: white;
-            background-color: #0282F9;
+            background-color: $blueDcomics;
             border: none;
             cursor: pointer;
           }
