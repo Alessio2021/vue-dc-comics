@@ -5,10 +5,12 @@
     <div class="container-main">
       <h2 class="title-absolute">current series</h2>
       <div class="container">
-        <ul>
-          <li v-for="(product, index) in products" :key="index">
-            <Product/>
-          </li>
+        <ul class="product-list">
+          <Product
+           v-for="(product, index) in products" :key="index"
+           :img="product.thumb"
+           :alt="product.series"
+          />
         </ul>
       </div>
     </div>
@@ -110,7 +112,6 @@ export default {
     height: 400px;
   }
   .container-main {
-      height: 100px;
       background-color: #1C1C1C;
       position: relative;
       .title-absolute {
@@ -121,6 +122,12 @@ export default {
         position: absolute;
         left: 200px;
         top: -25px;
+      }
+      .product-list {
+        display: flex;
+        width: 100%;
+        padding: 2em;
+            flex-wrap: wrap;
       }
   }
 </style>
